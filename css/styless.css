@@ -33,14 +33,14 @@ section {
 .logo {
     font-size: 26px;
 }
-.nav-box ul {
+.nav-box ul, .nav-box2 ul {
      display: flex; 
 }
-.nav-box li {
+.nav-box li, .nav-box2 li {
     list-style: none;
     /* margin-left: 50px; */
 }
-.nav-box a {
+.nav-box a, .nav-box2 a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.432);
 }
@@ -140,7 +140,7 @@ strong {
     nav, ul, li {
         text-align: center;
     }
-    .nav-box li {
+    .nav-box li, .nav-box2 li {
         background-color: white;
         padding: 15px 10px;
         margin: 4px 0;
@@ -189,6 +189,19 @@ strong {
      span {
          margin-bottom: 10px;
      }
+     /***********  bottom nav part  ***********/
+     .nav2 {
+         display: flex;
+         justify-content: space-between;
+         padding: 40px 5px;
+     }
+     .nav-box2 {
+         display: none;
+     }
+     .nav2 a {
+         text-decoration: none;
+         color: rgba(0, 0, 0, 0.432);
+     }
 }
 
 
@@ -202,7 +215,7 @@ strong {
         align-items: center;
         padding: 30px 0; 
     } 
-    .nav-box li {
+    .nav-box li, .nav-box2 li {
         display: inline-block;
         margin-left: 50px;
     }
@@ -220,3 +233,10 @@ strong {
     section {
         width: 95%;
     }
+/********* bottom nav box **********************/
+.nav-box2 {
+    display: show;
+}
+.nav2 .toTop {
+    display: none;
+}
