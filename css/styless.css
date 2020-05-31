@@ -127,6 +127,8 @@ strong {
 
 
 
+
+
 /******************  media q *********************************/
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -252,15 +254,16 @@ strong {
         width: 95%;
     }
 /********* bottom nav box **********************/
-.nav-box2 {
-    display: show;
-}
 .nav2 .toTop {
     display: none;
+    }
 }
 
+
+
+
 @media (min-width: 950px) {
-.card {
+    .card {
     width: 30%;
-}
+    }
 }
