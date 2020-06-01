@@ -370,8 +370,12 @@ strong {
     .toTop {
         display: none;
         }
-    .nav2 {
+    .nav-box2 {
         display: flex;
+    }
+    .nav2 h4 {
+        display:flex;
+        align-items: center;
     }
 }
 
