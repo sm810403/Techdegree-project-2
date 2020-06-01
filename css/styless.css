@@ -19,7 +19,7 @@ hr {
     width: 90%;
     margin: 0 auto;
 }
-nav {
+.nav1, .nav2 {
     width: 90%;
     margin: 0 auto;
 }
@@ -64,7 +64,7 @@ section {
     padding: 20px 0 60px;
 }
 .main-headline {
-    width: 55%;
+    width: 50%;
 }
 .main-headline p {
     font-family: 'Roboto Mono', monospace;
@@ -188,7 +188,7 @@ strong {
 
 /******************  media q *********************************/
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) {
     /********* nav part  ******************/
     nav, ul, li {
         text-align: center;
@@ -216,10 +216,11 @@ strong {
     }
     .main-headline {
         width: 90%;
-        margin: 40px auto 0;
+        margin: 25px auto;
     }
     .main-headline p {
         text-align: center;
+        padding-right:
     }
     /******* section part ****************/
     .card {
@@ -285,8 +286,9 @@ strong {
 
 @media (min-width: 769px) {
   /******* nav part ****************/
-    nav {
+    .nav1 {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         padding: 30px 0; 
@@ -294,6 +296,7 @@ strong {
     .nav-box li, .nav-box2 li {
         display: inline-block;
         margin-left: 35px;
+        background-color: rgba(255, 255, 255, 0.692);
     }
     .nav-box li:hover {
         text-shadow: 2px 2px 10px rgb(241, 134, 134);
@@ -302,8 +305,17 @@ strong {
         color: rgba(44, 43, 43, 0.747);
     }
  /******* header part ****************/
+    #home {
+    display: flex;
+    flex-direction: row-reverse;
+    }
     .main-headline {
         float: left;
+    }
+    .main-headline p {
+        text-align: left;
+        padding-right: 0 10px 0;
+        margin-right: 10px;
     }
     header, footer {
         width: 90%;
@@ -352,12 +364,15 @@ strong {
     }
 
 /********* bottom nav box **********************/
-#contact {
-    clear: both;
-}
+    #contact {
+        clear: both;
+    }
 
-.nav2 .toTop {
-    display: none;
+    .toTop {
+        display: none;
+        }
+    .nav2 {
+        display: flex;
     }
 }
 
@@ -365,6 +380,10 @@ strong {
 
 
 @media (min-width: 950px) {
+    .nav1 {
+        display: flex;
+        flex-direction: row;
+    }
     .card {
     width: 30%;
     }
